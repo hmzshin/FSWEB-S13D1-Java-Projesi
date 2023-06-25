@@ -19,6 +19,7 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 
 
 shouldWakeUp (true, 1); => true dönmeli(Gece 1'de köpeğimiz havlıyor)
+<<<<<<< HEAD
 
 shouldWakeUp (false, 2); => false dönmeli.(köpek havlamıyor.)
 
@@ -27,6 +28,12 @@ shouldWakeUp (true, 8); => false dönmeli.(8'den sonra ise tepki vermeliyiz.)
 shouldWakeUp (true, -1); => false dönmeli(-1 geçersiz değer)
 
 
+=======
+shouldWakeUp (false, 2); => false dönmeli.(köpek havlamıyor.)
+shouldWakeUp (true, 8); => false dönmeli.(8'den sonra ise tepki vermeliyiz.)
+shouldWakeUp (true, -1); => false dönmeli(-1 geçersiz değer)
+
+>>>>>>> 402c4ba (Init Project)
 ### Yaş Tespiti
 
 * ```hasTeen``` isimli 3 tane parametre alan bir metod yazmak istiyoruz.
@@ -34,6 +41,7 @@ shouldWakeUp (true, -1); => false dönmeli(-1 geçersiz değer)
 * Diğer şartlarda ```false``` değer dönmeli.
 
 hasTeen(9, 99, 19); => true dönmeli.(19 değerinden dolayı)
+<<<<<<< HEAD
 
 hasTeen(23, 15, 42); => true dönmeli.(15 değerinden dolayı)
 
@@ -41,6 +49,12 @@ hasTeen(22, 23, 34); => false dönemli(Hiçbir değer 13-19 arasında değil.)
 
 
 
+=======
+hasTeen(23, 15, 42); => true dönmeli.(15 değerinden dolayı)
+hasTeen(22, 23, 34); => false dönemli(Hiçbir değer 13-19 arasında değil.)
+
+
+>>>>>>> 402c4ba (Init Project)
 ### Oyuncu Kedi
 
 * Oyun oynamayı çok seven bir kedimiz var. Kedimizin oyun oynadığı zamanları tespit etmek için bir metod yazacağız.
@@ -51,12 +65,18 @@ hasTeen(22, 23, 34); => false dönemli(Hiçbir değer 13-19 arasında değil.)
 
 
 isCatPlaying(true, 10); => false dönmeli(sıcaklık 25-45 arasında olmalıydı)
+<<<<<<< HEAD
 
 isCatPlaying(false, 36); => false dönmeli(sıcaklık 25-35 arasında olmalıydı)
 
 isCatPlaying(false, 35); => true dönmeli(sıcaklık 25-35 arasında.)
 
 
+=======
+isCatPlaying(false, 36); => false dönmeli(sıcaklık 25-35 arasında olmalıydı)
+isCatPlaying(false, 35); => true dönmeli(sıcaklık 25-35 arasında.)
+
+>>>>>>> 402c4ba (Init Project)
 ### Alan Hesaplama
 
 * Dikdörtgenin alanını hesaplamak için bir metod yazınız. Metodun ismi ```area``` olmalı.
@@ -77,4 +97,8 @@ area(-1.0, 4.0); => -1 değerini dönmeli.
 
 area(5.0); => 78.53975 değerini dönmeli
 
+<<<<<<< HEAD
 area(-1); => -1 değerini dönmeli.
+=======
+area(-1); => -1 değerini dönmeli.
+>>>>>>> 402c4ba (Init Project)

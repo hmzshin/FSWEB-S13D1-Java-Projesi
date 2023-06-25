@@ -1,4 +1,5 @@
 import java.lang.Math;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("shouldWakeUp: " + shouldWakeUp(true, 1));
@@ -14,8 +15,8 @@ public class Main {
         System.out.println("Is cat playing: " + isCatPlaying(false, 36));
         System.out.println("Is cat playing: " + isCatPlaying(false, 35));
 
-        System.out.println("Area of rectangle: " + areaRectangle(5.0,4.0));
-        System.out.println("Area of rectangle: " + areaRectangle(-1.0,4.0));
+        System.out.println("Area of rectangle: " + areaRectangle(5.0, 4.0));
+        System.out.println("Area of rectangle: " + areaRectangle(-1.0, 4.0));
 
         System.out.println("Area of circle: " + areaCircle(5.0));
         System.out.println("Area of circle: " + areaCircle(-1.0));
@@ -24,6 +25,7 @@ public class Main {
     public static boolean shouldWakeUp(boolean isDogBarking, int time) {
         return ((time >= 0 && time < 8) || (time >= 20 && time < 24)) && isDogBarking;
     }
+
     public static boolean hasTeen(int age1, int age2, int age3) {
 
         int[] ages = { age1, age2, age3 };
@@ -35,6 +37,7 @@ public class Main {
         return false;
 
     }
+
     public static boolean isCatPlaying(boolean isSummer, int temperature) {
         if (isSummer) {
             return temperature >= 25 && temperature <= 45;
@@ -47,12 +50,13 @@ public class Main {
         if (a <= 0 || b <= 0) {
             return -1;
         }
-        return a*b;
+        return a * b;
     }
+
     public static double areaCircle(double radius) {
         if (radius <= 0) {
             return -1;
         }
-        return Math.PI*radius*radius;
+        return Math.PI * radius * radius;
     }
 }
